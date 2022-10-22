@@ -15,5 +15,5 @@ export default function Home(props) {
 
 export const getStaticProps = async () => {
   const response = await axios.get("https://api.github.com/users/Eclipsu");
-  return { props: { image_url: response.data.avatar_url }, revalidate: 2000 };
+  return { props: { image_url: response.data.avatar_url }, revalidate: 10 };
 };
