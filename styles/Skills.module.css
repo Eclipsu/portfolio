@@ -1,0 +1,9 @@
+.skills {
+  margin-top: 90px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}

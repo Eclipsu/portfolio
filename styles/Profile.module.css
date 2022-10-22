@@ -1,0 +1,9 @@
+.profile {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  border-radius: 50%;
+}
