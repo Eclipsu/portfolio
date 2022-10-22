@@ -13,7 +13,7 @@ export default function Home(props) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await axios.get("https://api.github.com/users/Eclipsu");
-  return { props: { image_url: response.data.avatar_url }, revalidate: 10 };
+  return { props: { image_url: response.data.avatar_url } };
 };
