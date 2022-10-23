@@ -6,18 +6,18 @@ export default function Navbar() {
     <div className={navStyles.navbar}>
       <ul className={navStyles.nav}>
         <li>
-          <Link href={"Home"}>Home</Link>
+          <Link href={"#"}>Home</Link>
         </li>
         <li>
-          <Link href={"Skill"}>Skill</Link>
+          <Link href={"#skills"}>Skill</Link>
         </li>
         <li>
-          <Link href={"Projects"}>Projects</Link>
+          <Link href={"#project"}>Projects</Link>
         </li>
       </ul>
       <ul>
         <li className={navStyles.github}>
-          <Link href={"https://github.com/Eclipsu"}>{<GithubIco />}</Link>
+          <Link href={"https://github.com/Eclipsu/portfolio"}>{<GithubIco />}</Link>
         </li>
       </ul>
     </div>

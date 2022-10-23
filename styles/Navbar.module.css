@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
 
 .navbar {
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* font-size: 1.2em; */
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
   overflow: hidden;
 }
 
@@ -30,23 +33,27 @@
   transition: background-color 0.3s;
 }
 
-/* Change the link color to #111 (black) on hover */
-.nav li a:hover {
-  background-color: #27272a;
-}
-
 .github {
   background-color: #27272a;
-  padding: 5px 10px;
   border-radius: 15%;
-  display: block;
   cursor: pointer;
-  font-size: 1.3em;
   color: white;
   border: 2px solid transparent;
   transition: border 0.1s;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 8px;
+  border-radius: 0.5em;
+  transition-duration: 150ms;
+  float: right;
 }
 
 .navbar .github:hover {
   border: 2px solid white;
+}
+
+@media screen and (max-width: 640px) {
+  .nav {
+    display: none;
+  }
 }

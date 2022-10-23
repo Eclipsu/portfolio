@@ -1,9 +1,31 @@
-.skills {
-  margin-top: 90px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 
 .skill {
   display: flex;
   align-items: center;
-  padding: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.642);
+  border: 2px solid white;
+  border-width: 0px;
+  border-bottom-width: 0.1px;
+  border-color: rgb(107 114 128);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.title {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.arrow {
+  border-width: 0pxg;
+}
+
+@media screen and (max-width: 640px) {
+  .skill {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

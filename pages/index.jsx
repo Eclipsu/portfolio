@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import Navbar from "../Components/Navigation/Navbar";
 import Profile from "../Components/Body/Profile";
 import Skills from "../Components/Body/Skills";
@@ -8,7 +9,7 @@ export default function Home(props) {
     <div className="main">
       <Navbar />
       <Profile image_url={props.image_url} />
-      <Skills />
+      <Skills id="skills" />
     </div>
   );
 }

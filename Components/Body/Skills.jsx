@@ -7,9 +7,10 @@ export default function Profile(props) {
   return (
     <div className={styles.skills}>
       <Heading>Skills</Heading>
-      <SkillPoints skill="Javascript" description="as my language of choice" />
+      <SkillPoints skill="Javascript" description="as my main language" />
       <SkillPoints skill="MERN" description="as the Stack i work with" />
-      <SkillPoints skill="Mysql" description="YEAH" />
+      <SkillPoints skill="Express" description="as my APT framework" />
+      <SkillPoints skill="Mysql / MongoDB" description="as my database" />
     </div>
   );
 }

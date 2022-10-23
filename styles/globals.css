@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sen");
+
 html,
 body {
   padding: 0;
@@ -32,12 +34,37 @@ ul {
 }
 
 .main {
-  margin: 20px 20em;
+  /* margin: 20px 20em; */
+  padding-left: 18rem;
+  padding-right: 18rem;
   font-family: "Noto Sans", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
   .main {
-    margin: 10px;
+    font-family: "Sen", sans-serif;
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
