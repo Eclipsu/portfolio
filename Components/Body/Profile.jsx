@@ -11,7 +11,7 @@ export default function Profile(props) {
         <p>An aspiring Developer and Student.</p>
         <p>I build Web apps and Discord bots</p>
       </span>
-      <span>
+      <span className={styles.image}>
         <Image className={styles.image} src={props.image_url} height={100} width={100} />
       </span>
     </div>

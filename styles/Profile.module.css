@@ -10,3 +10,9 @@
 .image {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 480px) {
+  .image {
+    display: none;
+  }
+}
