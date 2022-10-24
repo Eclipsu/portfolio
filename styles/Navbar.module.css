@@ -48,6 +48,10 @@
   float: right;
 }
 
+.githubIco {
+  display: block;
+}
+
 .navbar .github:hover {
   border: 2px solid white;
 }
