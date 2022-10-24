@@ -17,7 +17,7 @@ export default function Navbar() {
       </ul>
       <ul>
         <li className={navStyles.github}>
-          <Link href={"https://github.com/Eclipsu/portfolio"}>{<GithubIco />}</Link>
+          <Link href={"https://github.com/Eclipsu/portfolio"}>{<GithubIco className={navStyles.githubIco} />}</Link>
         </li>
       </ul>
     </div>
