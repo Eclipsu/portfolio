@@ -46,6 +46,7 @@
   border-radius: 0.5em;
   transition-duration: 150ms;
   float: right;
+  display: block;
 }
 
 .githubIco {
