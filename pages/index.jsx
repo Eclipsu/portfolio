@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "../Components/Navigation/Navbar";
 import Profile from "../Components/Body/Profile";
 import Skills from "../Components/Body/Skills";
+import Contact from "../Components/Body/Contact";
 
 export default function Home(props) {
   return (
@@ -18,6 +19,7 @@ export default function Home(props) {
       <Navbar />
       <Profile image_url={props.image_url} />
       <Skills id="skills" />
+      <Contact id="contact" />
     </div>
   );
 }

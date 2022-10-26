@@ -1,6 +1,7 @@
 import Link from "next/link";
 import navStyles from "../../styles/Navbar.module.css";
-import GithubIco from "../Icons/Github.js";
+import Github from "../Icons/Github.js";
+
 export default function Navbar() {
   return (
     <div className={navStyles.navbar}>
@@ -17,7 +18,7 @@ export default function Navbar() {
       </ul>
       <ul>
         <li className={navStyles.github}>
-          <Link href={"https://github.com/Eclipsu/portfolio"}>{<GithubIco className={navStyles.githubIco} />}</Link>
+          <Link href={"https://github.com/Eclipsu/portfolio"}>{<Github />}</Link>
         </li>
       </ul>
     </div>

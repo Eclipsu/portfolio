@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "svg": "svgr -d Ico Components/Icons",
+    "svg": "svgr -d Components/Icons Ico",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

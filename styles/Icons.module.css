@@ -1,0 +1,24 @@
+.icon div svg {
+  display: block;
+}
+
+.icon div {
+  background-color: #27272a;
+  background-color: red;
+  border-radius: 15%;
+  cursor: pointer;
+  color: white;
+  border: 2px solid transparent;
+  transition: border 0.1s;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 8px;
+  border-radius: 0.5em;
+  transition-duration: 150ms;
+  float: right;
+  display: block;
+}
+
+.icon:hover {
+  border: 2px solid white;
+}
