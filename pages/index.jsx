@@ -5,6 +5,7 @@ import Navbar from "../Components/Navigation/Navbar";
 import Profile from "../Components/Body/Profile";
 import Skills from "../Components/Body/Skills";
 import Contact from "../Components/Body/Contact";
+import Projects from "../Components/Body/Projects";
 
 export default function Home(props) {
   return (
@@ -19,6 +20,7 @@ export default function Home(props) {
       <Navbar />
       <Profile image_url={props.image_url} />
       <Skills id="skills" />
+      <Projects repos={props.repos} id="project" />
       <Contact id="contact" />
     </div>
   );
@@ -26,5 +28,6 @@ export default function Home(props) {
 
 export const getStaticProps = async () => {
   const response = await axios.get("https://api.github.com/users/Eclipsu");
-  return { props: { image_url: response.data.avatar_url }, revalidate: 10 };
+  const repoResponse = await axios.get("https://api.github.com/users/Eclipsu/repos");
+  return { props: { image_url: response.data.avatar_url, repos: repoResponse.data }, revalidate: 10 };
 };
